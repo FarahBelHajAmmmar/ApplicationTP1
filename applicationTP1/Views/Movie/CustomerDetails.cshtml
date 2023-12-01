@@ -1,0 +1,11 @@
+﻿@model Customermovieviewmodel
+
+<h2>Customer Details</h2>
+<ul>
+    @foreach (var customer in Model.customers)
+    {
+        <li>Customer ID: @customer.Id</li>
+        <li>Customer Name: @customer.Name</li>
+    }
+</ul>
+}

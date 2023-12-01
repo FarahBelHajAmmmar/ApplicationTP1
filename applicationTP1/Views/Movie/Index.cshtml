@@ -1,0 +1,16 @@
+﻿@model IEnumerable<applicationTP1.Models.Movie>
+
+
+
+<h2>Test Vue1</h2>
+@foreach(var c in Model)
+{
+	<p>@c.Name</p>
+}
+
+@{
+//<h2>@Html.ActionLink(@C.Name,"CustomerDetails", new {id=C.Id})</h2>
+}
+
+
+

@@ -1,0 +1,19 @@
+﻿@model Customermovieviewmodel
+<h3>Film et liste des clients</h3>
+<h4>Film</h4>
+<ul>
+	<li>
+		<p>@Model.movie.Name</p>
+	</li>
+</ul>
+
+<h4>Liste des clients</h4>
+@foreach(var customer in Model.customers)
+{    <ul>
+	<li>
+		     
+			<p>@customer.Name</p>
+	</li>
+</ul>
+	
+}
